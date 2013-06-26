@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_background">#fff5f5f5</color>
+    <color name="light_red">#ba0305</color>
+    <color name="dark_red">#9d0c0f</color>
+    <color name="text_tab_selected">#5d5d5d</color>
+    <color name="text_tab_unselected">#838183</color>
+
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="bwhite">#F5F5F5</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="bblue">#09adb9</drawable>
+ <drawable name="bgray">#E0E0E0</drawable>
+ 
+ 
+    <color name="blue1">#00BFFF</color>
+    <color name="pale_yellow">#E3E2AA</color>
+    <color name="pink">#D60AB4</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#32cd32</color>
+    <color name="Lightgreen">#B4E519</color>
+    <color name="LightCyan">#e0ffff</color>
+    <color name="Cyan">#00ffff</color>
+    <color name="Seashell">#fff5ee</color>
+    <color name="Lavender">#e6e6fa</color>
+    <color name="biscut">#FAEAB7</color>
+    <color name="mixblue">#191970</color>
+    <color name="grey">#808080</color>
+    <color name="lime">#FF00</color>
+    <color name="silver">#c0c0c0</color>
+    <color name="teal">#8080</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="black">#000000</color>
+    <color name="transperent">#0106000d</color>
+    <color name="Magenta">#E238EC</color>
+    <color name="Plum1">#F9B7FF</color>
+    <color name="Plum3">#C38EC7</color>
+    <color name="Thistle">#D2B9D3</color>
+    <color name="Lavender2">#EBDDE2</color>
+    <color name="Light">#ADDFFF</color>
+    <color name="Thistle1">#FCDFFF</color>
+    <color name="Cyan2">#50EBEC</color>
+    <color name="PaleTurquoise3">#92C7C7</color>
+    <color name="LightSky">#82CAFA</color>
+    <color name="Green3">#4CC417</color>
+    <color name="Goldenrod1">#FBB917</color>
+    <color name="Gold">#D4A017</color>
+    <color name="Pink">#FAAFBE</color>
+    <color name="LightGoldenrod1">#FFE87C</color>
+    <color name="White">#ffffff</color>
+    <color name="Blue">#5279B5</color>
+    <color name="Top">#616161</color>
+    <color name="Middle">#333433</color>
+    <color name="Bottom">#535353</color>
+    <color name="DarkBlue">#0D4880</color>
+    <color name="PaleWhite">#FAFBFC</color>
+    <color name="lightSkyBlue">#DEE5ED</color>
+    <color name="Orange">#E36C02</color>
+    <color name="blue_ray">#5F9EA0</color>
+
+</resources>

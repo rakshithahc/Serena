@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutbgx" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/SERENA_REQUEST_CENTER"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <com.serena.autofit.ClearableEditText
+            android:id="@+id/user_edt_lg"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/textboxbgx"
+            android:ems="10"
+            android:hint="@string/username"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="13sp" >
+
+            <requestFocus />
+        </com.serena.autofit.ClearableEditText>
+
+        <com.serena.autofit.ClearableEditText
+            android:id="@+id/pass_edt_lg"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:password="true"
+            android:layout_alignLeft="@+id/user_edt_lg"
+            android:layout_below="@+id/user_edt_lg"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/textboxbgx"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="13sp" />
+
+        <com.serena.autofit.ClearableEditText
+            android:id="@+id/server"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/pass_edt_lg"
+            android:layout_below="@+id/pass_edt_lg"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/textboxbgx"
+            android:ems="10"
+            android:hint="@string/server"
+            android:inputType="textUri"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/server"
+            android:layout_below="@+id/relativeLayout2"
+            android:background="@drawable/login_btn"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/login"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/server"
+            android:layout_below="@+id/server"
+            android:layout_marginTop="2dp" >
+
+            <ToggleButton
+                android:id="@+id/checkBox1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignLeft="@+id/server"
+                android:layout_below="@+id/server"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/checkbox"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/checkBox1"
+                android:gravity="bottom"
+                android:text="@string/secure"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/loginProgress"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/relativeLayout2"
+            android:layout_below="@+id/relativeLayout2"
+            android:indeterminateDrawable="@drawable/animation" />
+    </RelativeLayout>
+
+</RelativeLayout>

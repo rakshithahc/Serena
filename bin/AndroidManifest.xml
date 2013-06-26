@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.serana"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:maxSdkVersion="9"
+        android:minSdkVersion="8"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.serana.MyApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/serena_launcher"
+        android:label="@string/app_reg"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_reg"
+            android:noHistory="true"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainSerenaActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Second_Btn"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Catalog"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar" />
+              <activity
+            android:name=".TabletCatalog"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Catalog_webview"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".SelectOption"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Request"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+          <activity
+            android:name=".Approval"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Request_webview"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Approval_webview"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".search_webview"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".AndroidCustomGalleryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Sla_data_Viewer"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Search_View"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+          <activity
+            android:name=".HelpScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_reg"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@*android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        
+
+        <receiver android:name="PowerNotification" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

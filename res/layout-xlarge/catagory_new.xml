@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutbgx"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/cat_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="6dp"
+        android:fadingEdge="none"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/no_service_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/no_service"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/refreshicon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/headind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#01cccc"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/searchbar_bg" >
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/homebutton_selector" />
+
+        <TextView
+            android:id="@+id/cat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Catalog"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/catalogProgress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/home"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/relativeLayout11"
+            android:indeterminateDrawable="@drawable/animation" />
+
+        <Button
+            android:id="@+id/testbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/home"
+            android:layout_alignBottom="@+id/home"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/home"
+            android:background="@drawable/anim_catalog_btn" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout11"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/searchbar_bg" >
+
+            <EditText
+                android:id="@+id/cat_search"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/cancelbtn"
+                android:background="@drawable/textboxbg"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/cancelbtn"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/cat_search"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cancel"
+                android:text="@string/Cancel"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginBottom="20dp"
+        android:horizontalSpacing="30dp"
+        android:numColumns="5"
+        android:padding="30dp"
+        android:verticalSpacing="40dp" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/noSearchResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/no_result"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

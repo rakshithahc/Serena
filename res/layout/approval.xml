@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbar" >
+
+        <TextView
+            android:id="@+id/iratemapprovallogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Approvals"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/list_spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iratemlogo"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/anim_home_btn" />
+    </RelativeLayout>
+
+    <com.serena.pull.PullToRefreshView
+        android:id="@+id/listapprovaldata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout11"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:drawSelectorOnTop="true"
+        android:listSelector="@drawable/listitemgreen"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:scrollingCache="false" >
+    </com.serena.pull.PullToRefreshView>
+
+    <TextView
+        android:id="@+id/nodata_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/sorry_no_data"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/nosearch_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/no_result"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout11"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:layout_weight="1"
+        android:background="@drawable/searchbar_bg" >
+
+        <EditText
+            android:id="@+id/app_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/cancel"
+            android:background="@drawable/textboxbg"
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/app_search"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/cancel"
+            android:text="@string/Cancel"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

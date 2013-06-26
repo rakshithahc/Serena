@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/customGalleryFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/topbar" >
+
+        <Button
+            android:id="@+id/capture"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/capture"
+            android:background="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/selection"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+             android:background="@drawable/custombutton"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/Cancel" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/selectedImageGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customGalleryFooter"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:background="@drawable/white"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+        android:id="@+id/nodata_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/sorry_no_data"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+</RelativeLayout>

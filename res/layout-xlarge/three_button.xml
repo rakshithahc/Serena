@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/layoutbgx"
+    android:gravity="fill_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/serch_btn"
+        android:layout_width="160dp"
+        android:layout_height="245dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/menu_br_active"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/req_btn"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:focusable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/request_custom_button"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/RequestCount"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:duplicateParentState="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0000ff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/searchbar_bg" >
+
+        <TextView
+            android:id="@+id/serverTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/logout_layout"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/userdetails" >
+
+            <ImageView
+                android:id="@+id/user_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/_0"
+                android:src="@drawable/defaultimg_view" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:textColor="#a9a9a9" />
+
+            <TextView
+                android:id="@+id/user_txtname"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/logout"
+                android:layout_toRightOf="@+id/user_img"
+                android:gravity="center_vertical"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/catlog_btn"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignTop="@+id/req_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="70dp"
+        android:layout_toLeftOf="@+id/req_btn"
+        android:background="@drawable/catalog_custom_button" >
+
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/approval_btn"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:focusable="true"
+        android:layout_toRightOf="@+id/req_btn"
+        android:background="@drawable/approval_custom_button" >
+
+        <TextView
+            android:id="@+id/approvalCount"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0000ff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/catlog_btn"
+        android:layout_below="@+id/req_btn"
+        android:layout_marginRight="88dp"
+        android:text="@string/Catalog"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/request"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/approval_btn"
+        android:layout_marginLeft="75dp"
+        android:text="@string/Approvals"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/logo_img"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/approval_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" >
+
+        <ProgressBar
+            android:id="@+id/menuProgress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="28dp"
+            android:indeterminateDrawable="@drawable/animation" />
+    </RelativeLayout>
+
+</RelativeLayout>

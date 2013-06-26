@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/example"
+    android:background="@drawable/layoutbgx"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/cat_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="6dp"
+        android:fadingEdge="none"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/no_service_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/no_service"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/refreshicon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/headind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#01cccc"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbar_main" >
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/anim_home_btnx" />
+
+        <TextView
+            android:id="@+id/cat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Catalog"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#a9a9a9"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/catalogProgress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/home"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:indeterminateDrawable="@drawable/animation" />
+
+        <Button
+            android:id="@+id/testbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/home"
+            android:layout_alignBottom="@+id/home"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34dp"
+            android:layout_toRightOf="@+id/home"
+            android:background="@drawable/anim_catalog_btn" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:horizontalSpacing="30dp"
+        android:numColumns="5"
+        android:padding="30dp"
+        android:verticalSpacing="40dp" >
+    </GridView>
+
+</RelativeLayout>

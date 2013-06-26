@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutbg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:background="@drawable/topbar" >
+
+        <Button
+            android:id="@+id/catalog"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mylibrary"
+            android:text="@string/Catalog"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:id="@+id/action_sla"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/action" >
+
+            <ImageView
+                android:id="@+id/slaimage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_launcher" />
+
+            <com.serena.autofit.AutofitTextView
+                android:id="@+id/slaheading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/slaimage"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/slahead"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/carosel"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="23dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/carosel"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/action_sla"
+            android:background="@android:color/white" >
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+</RelativeLayout>

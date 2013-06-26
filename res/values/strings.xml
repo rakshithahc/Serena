@@ -1,0 +1,60 @@
+<resources>
+
+    <string name="app_name">Request</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">main</string>
+    <string name="app_reg">Request</string>
+    <string name="results">Results</string>
+    <string name="inter_not_connected_msg">Internet not connected,Please check InternetSettings</string>
+    <string name="title">Title</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="server">Server</string>
+    <string name="select">Select</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="message">Message</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Approvals">Approvals</string>
+    <string name="press_cancel_ok">Press Cancel/OK</string>
+    <string name="SERENA_REQUEST_CENTER">SERENA REQUEST CENTER</string>
+    <string name="secure">Secure Connection(HTTPS)</string>
+    <string name="sorry_no_data">Sorry no data found ,try refreshing</string>
+    <string name="no_result">No Search Results</string>
+    <string name="search">Search</string>
+    <string name="help">Help</string>
+    <string name="loading">Loading Content</string>
+    <string name="mtext">Medium Text</string>
+    <string name="stext">Small Text</string>
+    <string name="ltext">Large Text</string>
+    <string name="no_server">No Server Found</string>
+    <string name="no_service">No Service Found</string>
+    <string name="Catalog">Catalog</string>
+    <string name="tableid">Table Id</string>
+    <string name="projectId">Project Id</string>
+    <string name="owner">Owner</string>
+    <string name="state">State</string>
+    <string name="s">s</string>
+    <string name="_0">0</string>
+    <string name="request">Requests</string>
+    <string name="dot">&#8230;</string>
+    <string name="req_id">req_id</string>
+    <string name="slahead">SLA HEAD</string>
+    <string name="ojh">iojhji</string>
+    <string name="option">Select Option</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="ok">Done</string>
+    <string name="okk">OK</string>
+    <string name="Photo_gallery">Photo Library</string>
+    <string name="selection">Images</string>
+
+    <string-array name="options">
+        <item>Capture from Camera</item>
+        <item>Open Gallery</item>
+    </string-array>
+
+</resources>

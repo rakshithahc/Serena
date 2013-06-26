@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/service_discrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:text="@string/mtext"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <com.serena.autofit.AutofitTextView
+        android:id="@+id/sla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/list_btn"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:gravity="right" />
+
+    <ImageView
+        android:id="@+id/service_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/_0" />
+
+    <com.serena.autofit.AutofitTextView
+        android:id="@+id/service_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|bottom"
+        android:paddingBottom="8dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>
